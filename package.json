@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.0"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-uglify": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nobuhiroharada/portfolio.git"
+  },
+  "author": "Nobuhiro Harada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nobuhiroharada/portfolio/issues"
+  },
+  "homepage": "https://github.com/nobuhiroharada/portfolio#readme"
+}

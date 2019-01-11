@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function(){
     /* typewriter */
     new TypeIt('#title', {
         strings: 'nobuhiroharada\'s portfolio',
