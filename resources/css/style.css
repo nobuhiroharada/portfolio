@@ -35,6 +35,10 @@ body {
 /* REUSABLE COMPONENT */
 /* ---------------------- */
 
+nav {
+    background-color: #000000;
+}
+
 .row {
     max-width: 1140px;
     margin: 0 auto;
