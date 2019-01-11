@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    /* typewriter */
+    new TypeIt('#title', {
+        strings: 'nobuhiroharada\'s portfolio',
+        speed: 100
+      });
     /* For the sticky navigation */
     $('.section-about').waypoint(function (direction) {
         if (direction == 'down') {
