@@ -140,6 +140,10 @@ a:active {
     border-bottom: 1px solid transparent;
 }
 
+a.no-bottom-line {
+    border-bottom: none;
+}
+
 /* BUTTONS */
 .btn:link,
 .btn:visited,

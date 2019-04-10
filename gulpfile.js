@@ -1,6 +1,7 @@
 var gulp    = require('gulp'),
     plumber = require('gulp-plumber'),
-    concat  = require('gulp-concat')
+    concat  = require('gulp-concat'),
+    cleanCSS = require('gulp-clean-css');
  
 gulp.task('js', function () {
   return gulp.src([
@@ -10,6 +11,18 @@ gulp.task('js', function () {
     'resources/js/script.js'
   ])
   .pipe(plumber())
-  .pipe(concat('main.js'))
+  .pipe(concat('bundle.js'))
   .pipe(gulp.dest('resources/js/'));
+});
+
+gulp.task('css', function() {
+  // return gulp.src([
+  //       'vendors/css/*.css',
+  //       'vendors/css/grid.css',
+  //       'vendors/css/animate.css',
+  //   ])
+    return gulp.src('vendors/css/*.css')
+  .pipe(concat('bundle.css'))
+  .pipe(cssClean())
+  .pipe(gulp.dest('resources/css/'));
 });
